@@ -7,8 +7,7 @@ import { WHITELISTED_CONTRACTS } from '../../../config';
 import FungibleTokens from '../../../services/FungibleTokens';
 import handleAsyncThunkStatus from '../../reducerStatus/handleAsyncThunkStatus';
 import initialStatusState from '../../reducerStatus/initialState/initialStatusState';
-import createParameterSelector from '../../selectors/mainSelectors/createParameterSelector';
-import selectSliceByAccountId from '../../selectors/mainSelectors/selectSliceByAccountId';
+import { createParameterSelector, selectSliceByAccountId } from '../../selectors/topLevel';
 
 const SLICE_NAME = 'tokens';
 
